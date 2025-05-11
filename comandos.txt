@@ -1,0 +1,16 @@
+cleNome: Artur Pereira Galvão
+git clone  https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+touch texto.txt
+git add texto.txt
+git commit -m "adicionou texto.txt com uma linha qualquer"
+git checkout -b feature-1
+git add texto.txt
+git commit -m "linha alterada para a feature"
+git checkout main
+git add texto.txt
+git commit -m "linha alterada para a main"
+git merge feature-1
+git add texto.txt
+git commit -m "linha alterada para evitar conflitos de merge"
+git checkout -b add-comandos
+touch comandos.txt
