@@ -14,3 +14,11 @@ git add texto.txt
 git commit -m "linha alterada para evitar conflitos de merge"
 git checkout -b add-comandos
 touch comandos.txt
+git add comandos.txt
+git push -u origin-atividade main
+git push -u origin-atividade add-comandos
+git checkout main
+git pull
+git add comandos.txt
+git commit -m "lista de comandos atualizada"
+git push -u origin-atividade main
